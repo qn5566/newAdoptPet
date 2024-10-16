@@ -2,5 +2,8 @@
     "ad_switch": "0",
     "version_build": "1",
     "adopt_url": "https://data.moa.gov.tw/Service/OpenData/TransService.aspx?UnitId=QcbUEzN6E6DL",
-    "lost_url": "https://data.moa.gov.tw/Service/OpenData/TransService.aspx?UnitId=IFJomqVzyB0i&IsTransData=1"
+    "lost_url": "https://data.moa.gov.tw/Service/OpenData/TransService.aspx?UnitId=IFJomqVzyB0i&IsTransData=1",
+    "ios_url": "",
+    "android_url": "",
+    "note": ""
 }
