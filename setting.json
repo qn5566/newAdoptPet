@@ -1,8 +1,8 @@
 {
-    "ad_switch": "0",
+    "ad_switch": "1",
     "version_build_ios": "1",
     "version_build_android": "2",
-    "ios_url": "",
+    "ios_url": "https://himydream.me/",
     "android_url": "https://himydream.me/",
     "update_note": "測試一下",
     "adopt_url": "https://data.moa.gov.tw/Service/OpenData/TransService.aspx?UnitId=QcbUEzN6E6DL",
