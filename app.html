@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>寵物領養紀錄</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+            if (/android/i.test(userAgent)) {
+                // 如果是 Android 裝置
+                window.location.href = "https://play.google.com/store/apps/details?id=com.meetstudio.app.adoptpet";
+            } else if (/iPhone|iPad|iPod/i.test(userAgent)) {
+                // 如果是 iOS 裝置
+                window.location.href = "https://apps.apple.com/us/app/id6737406473";
+            } else {
+                // 如果是其他裝置，顯示提示
+                document.body.innerHTML = "<h1>請使用手機訪問此頁面喔~</h1>";
+            }
+        });
+    </script>
+</head>
+
+<body>
+    <h1>快點來下載喔~</h1>
+</body>
+
+</html>
