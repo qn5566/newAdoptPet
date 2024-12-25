@@ -29,16 +29,15 @@
             } else if (/iPhone|iPad|iPod/i.test(userAgent)) {
                 // 如果是 iOS 裝置
                 window.location.href = "https://apps.apple.com/us/app/id6737406473";
-            } else {
-                // 如果是其他裝置，顯示提示
-                document.body.innerHTML = "<h1>請使用手機訪問此頁面喔~</h1>";
             }
         });
     </script>
 </head>
 
 <body>
-    <img src="res/app_icon.png" alt="快點來下載喔~" style="max-width: 100%; height: auto;">
+    <a href="https://apps.apple.com/us/app/id6737406473" target="_blank">
+        <img src="res/app_icon.png" alt="快點來下載喔~" style="max-width: 100%; height: auto;">
+    </a>
 </body>
 
 </html>
