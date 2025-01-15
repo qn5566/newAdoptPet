@@ -1,7 +1,7 @@
 {
     "ad_switch": "1",
-    "version_build_ios": "1",
-    "version_build_android": "2",
+    "version_build_ios": "18",
+    "version_build_android": "19",
     "ios_url": "https://himydream.me/",
     "android_url": "https://himydream.me/",
     "update_note": "測試一下",
