@@ -1,10 +1,10 @@
 {
     "ad_switch": "1",
-    "version_build_ios": "19",
-    "version_build_android": "19",
-    "ios_url": "https://apps.apple.com/us/app/id6737406473",
-    "android_url": "https://play.google.com/store/apps/details?id=com.meetstudio.app.adoptpet",
-    "update_note": "1. 修正部分圖片無法正確顯示問題.",
+    "version_build_ios": "22",
+    "version_build_android": "22",
+    "ios_url": "https://himydream.me/",
+    "android_url": "https://himydream.me/",
+    "update_note": "1. 修正生日計算錯誤.\n2. 增加其他資訊的彈窗.\n3. 修改輸入框的背景顏色.\n4. 調整遺失寵物搜尋的間距.",
     "adopt_url": "https://data.moa.gov.tw/Service/OpenData/TransService.aspx?UnitId=QcbUEzN6E6DL",
     "lost_url": "https://data.moa.gov.tw/Service/OpenData/TransService.aspx?UnitId=IFJomqVzyB0i&IsTransData=1"
 }
