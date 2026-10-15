@@ -116,7 +116,7 @@ def main():
         image = draw_slide(index, slide)
         name = f"{index + 1:02d}_{slide[1]}.png"
         image.save(google / name, optimize=True)
-        image.resize((1290, 2796), Image.Resampling.LANCZOS).save(apple / name, optimize=True)
+        image.resize((1206, 2622), Image.Resampling.LANCZOS).save(apple / name, optimize=True)
         thumbnail = image.resize((260, 563), Image.Resampling.LANCZOS)
         overview.paste(thumbnail, (20 + (index % 3) * 280, 32 + (index // 3) * 595))
         print(name)
