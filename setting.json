@@ -47,6 +47,46 @@
             "ios_url": "https://apps.apple.com/us/app/id1671108420?action=write-review"
         }
     ],
+    "banner": [
+        {
+            "title": "Baby Learn English｜遊戲學 ABC",
+            "subtitle": "邊玩邊學，輕鬆認識英文字母",
+            "image": "https://raw.githubusercontent.com/qn5566/newAdoptPet/main/res/images/pics/ads_banner_4.webp",
+            "image_height": 76,
+            "url": "https://qn5566.github.io/BabayLearnEnglish/"
+        },
+        {
+            "title": "HiMyDream 親子台灣旅遊部落客",
+            "subtitle": "親子共遊靈感與實用攻略",
+            "image": "https://raw.githubusercontent.com/qn5566/newAdoptPet/main/res/images/pics/ads_banner_1.webp",
+            "image_height": 76,
+            "url": "https://himydream.me/"
+        },
+        {
+            "title": "台灣景點地圖 APP",
+            "subtitle": "台灣景點一手掌握",
+            "image": "https://raw.githubusercontent.com/qn5566/newAdoptPet/main/res/images/pics/ads_banner_5.webp",
+            "image_height": 76,
+            "android_url": "https://play.google.com/store/apps/details?id=com.meetstudio.travel",
+            "ios_url": "https://apps.apple.com/us/app/id1671108420"
+        },
+        {
+            "title": "台灣吃喝玩樂地圖 APP",
+            "subtitle": "景點、美食、路線一手掌握",
+            "image": "https://raw.githubusercontent.com/qn5566/newAdoptPet/main/res/images/pics/ads_banner_2.webp",
+            "image_height": 76,
+            "android_url": "https://play.google.com/store/apps/details?id=com.meetstudio.event",
+            "ios_url": "https://apps.apple.com/us/app/id6446348643"
+        },
+        {
+            "title": "幫忙打分給予支持，大感謝",
+            "subtitle": "你的肯定就是我們前進的動力",
+            "image": "https://raw.githubusercontent.com/qn5566/newAdoptPet/main/res/images/icon/rate_us.webp",
+            "image_height": 40,
+            "android_url": "https://play.google.com/store/apps/details?id=com.meetstudio.travel&reviewId=0",
+            "ios_url": "https://apps.apple.com/us/app/id1671108420?action=write-review"
+        }
+    ],
     "ad_banner_max_impressions_per_session": 4,
     "ad_rewarded_cooldown_seconds": 30,
     "ad_native_interval": 6,
