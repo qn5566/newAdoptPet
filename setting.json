@@ -49,6 +49,14 @@
     ],
     "banner": [
         {
+            "title": "台灣吃喝玩樂地圖 APP",
+            "subtitle": "景點、美食、路線一手掌握",
+            "image": "https://raw.githubusercontent.com/qn5566/newAdoptPet/main/res/images/banner/ads_banner_2.webp",
+            "image_height": 76,
+            "android_url": "https://play.google.com/store/apps/details?id=com.meetstudio.event",
+            "ios_url": "https://apps.apple.com/us/app/id6446348643"
+        },
+        {
             "title": "Baby Learn English｜遊戲學 ABC",
             "subtitle": "邊玩邊學，輕鬆認識英文字母",
             "image": "https://raw.githubusercontent.com/qn5566/newAdoptPet/main/res/images/banner/ads_banner_4.webp",
@@ -69,14 +77,6 @@
             "image_height": 76,
             "android_url": "https://play.google.com/store/apps/details?id=com.meetstudio.travel",
             "ios_url": "https://apps.apple.com/us/app/id1671108420"
-        },
-        {
-            "title": "台灣吃喝玩樂地圖 APP",
-            "subtitle": "景點、美食、路線一手掌握",
-            "image": "https://raw.githubusercontent.com/qn5566/newAdoptPet/main/res/images/banner/ads_banner_2.webp",
-            "image_height": 76,
-            "android_url": "https://play.google.com/store/apps/details?id=com.meetstudio.event",
-            "ios_url": "https://apps.apple.com/us/app/id6446348643"
         },
         {
             "title": "幫忙打分給予支持，大感謝",
