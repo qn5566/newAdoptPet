@@ -15,6 +15,9 @@ PALETTE = [
     ("#FDF3EF", "#F7E2DD", "#E79B8F"),
     ("#FFF3EE", "#F9E1E1", "#ED939D"),
     ("#FFF5EF", "#F9E3DA", "#EA9A86"),
+    ("#FFF2F0", "#F8DEDE", "#EC8F99"),
+    ("#FFF5EC", "#F9E2DA", "#ED9F85"),
+    ("#FFF3EE", "#F7E0DA", "#E99591"),
 ]
 SLIDES = [
     ("01", "遇見等待家的牠", "每一次相遇\n都是家的開始", "看看正在等待認養的毛孩", "134623"),
@@ -23,6 +26,9 @@ SLIDES = [
     ("04", "陪牠平安回家", "多一份留意\n幫走失的牠回家", "瀏覽走失資訊，讓相遇多一份希望", "134728"),
     ("05", "收藏每份心動", "喜歡的毛孩\n先好好收藏", "把想再見的牠，留在收藏清單", "135924"),
     ("06", "記下毛孩生活", "和牠的每一天\n都值得記得", "體重與看診紀錄，陪牠慢慢長大", "135827"),
+    ("07", "掌握毛孩花費", "每筆花費\n都看得清楚", "用圖表掌握毛孩生活開銷", "20261016_140035"),
+    ("08", "看懂花費分布", "食衣住行\n一眼看明白", "依類別檢視支出與花費趨勢", "20261016_140052"),
+    ("09", "照顧健康日常", "體重與看診\n貼心記錄提醒", "追蹤體重變化，記得看診時間", "124706"),
 ]
 
 
@@ -81,7 +87,7 @@ def draw_slide(index, slide):
     icon.thumbnail((74, 74), Image.Resampling.LANCZOS)
     canvas.paste(icon, (82, 79), icon)
     draw.text((174, 89), "寵物領養紀錄", font=font(34), fill=rgb("#715D57"))
-    draw.text((900, 95), f"{number} / 06", font=font(28), fill=rgb(accent))
+    draw.text((900, 95), f"{number} / {len(SLIDES):02d}", font=font(28), fill=rgb(accent))
 
     draw.rounded_rectangle((82, 203, 82 + len(eyebrow) * 32 + 44, 263), radius=30, fill=rgb("#FFFFFF"))
     draw.text((105, 216), eyebrow, font=font(27), fill=rgb(accent))
@@ -99,9 +105,12 @@ def draw_slide(index, slide):
     canvas = Image.alpha_composite(canvas.convert("RGBA"), shadow.filter(ImageFilter.GaussianBlur(37)))
     frame_draw = ImageDraw.Draw(canvas)
     frame_draw.rounded_rectangle((left - 9, top_y - 9, left + width + 9, top_y + height + 9), radius=74, fill="#FFFFFF")
-    screenshot, mask = rounded_screenshot(
-        SOURCE / f"Screenshot_20261015_{screenshot_id}.png", width, height, 65
+    source_name = (
+        f"Screenshot_{screenshot_id}.png"
+        if "_" in screenshot_id
+        else f"Screenshot_20261015_{screenshot_id}.png"
     )
+    screenshot, mask = rounded_screenshot(SOURCE / source_name, width, height, 65)
     canvas.paste(screenshot, (left, top_y), mask)
     return canvas.convert("RGB")
 
@@ -111,7 +120,7 @@ def main():
     apple = OUTPUT / "app_store"
     google.mkdir(parents=True, exist_ok=True)
     apple.mkdir(parents=True, exist_ok=True)
-    overview = Image.new("RGB", (860, 1250), "#FFF7F2")
+    overview = Image.new("RGB", (860, 1845), "#FFF7F2")
     for index, slide in enumerate(SLIDES):
         image = draw_slide(index, slide)
         name = f"{index + 1:02d}_{slide[1]}.png"
